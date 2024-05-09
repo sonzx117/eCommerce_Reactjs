@@ -1,0 +1,74 @@
+.banner {
+  height: 500px;
+  background-image: url('../../resources/img/banner/banner-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  margin-bottom: 70px;
+  .banner__text span {
+    font-size: 18px;
+    color: #ca1515;
+    text-transform: uppercase;
+  }
+  .banner__text h1 {
+    font-size: 80px;
+    color: #111111;
+    margin-bottom: 15px;
+    font-family: 'Cookie', cursive;
+  }
+  .banner__text a {
+    font-size: 14px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+
+    .banner__text a:after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background: #ca1515;
+      content: '';
+    }
+  }
+}
+
+.banner__slider {
+  text-align: center;
+  padding: 150px 0 0;
+
+  &.owl-carousel {
+    .owl-dots {
+      position: absolute;
+      left: 0;
+      top: 430px;
+      width: 100%;
+      text-align: center;
+
+      button {
+        height: 12px;
+        width: 12px;
+        background: #a1a1a1;
+        border-radius: 50%;
+        margin-right: 10px;
+
+        &.active {
+          background: #ca1515;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.carousel-inner {
+  width: 600px !important;
+  height: 450px !important;
+}
